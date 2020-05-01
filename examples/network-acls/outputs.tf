@@ -10,11 +10,6 @@ output "vpc_cidr_block" {
   value       = module.vpc.vpc_cidr_block
 }
 
-//output "vpc_ipv6_cidr_block" {
-//  description = "The IPv6 CIDR block"
-//  value       = ["${module.vpc.vpc_ipv6_cidr_block}"]
-//}
-
 # Subnets
 output "private_subnets" {
   description = "List of IDs of private subnets"
@@ -41,11 +36,6 @@ output "public_network_acl_id" {
 output "private_network_acl_id" {
   description = "ID of the private network ACL"
   value       = module.vpc.private_network_acl_id
-}
-
-output "elasticache_network_acl_id" {
-  description = "ID of the elasticache network ACL"
-  value       = module.vpc.elasticache_network_acl_id
 }
 
 output "default_network_acl_id" {
