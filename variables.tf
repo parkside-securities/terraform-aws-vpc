@@ -910,29 +910,29 @@ variable "flow_log_cloudwatch_log_group_kms_key_id" {
 
 variable "tgw_id" {
   description = <<-EOT
-	  TGW ID to attach to the VPC.
+    TGW ID to attach to the VPC.
   EOT
   default     = null
 }
 
 variable "tgw_attach_default_route_table_association" {
   description = <<-EOT
-	  Whether the VPC Attachment should be associated with the EC2 Transit gateway default route table.
+    Whether the VPC Attachment should be associated with the EC2 Transit gateway default route table.
 	EOT
   default     = true
 }
 
 variable "tgw_attach_default_route_table_propagation" {
   description = <<-EOT
-	  Whether the VPC Attachment should propagate routes to the EC2 transit Gateway default route table.
-	EOT
+    Whether the VPC Attachment should propagate routes to the EC2 transit Gateway default route table.
+  EOT
   default     = true
 }
 
 variable "use_tgw_for_egress" {
   description = <<-EOT
-	  Set to true only when the transit gateway routing table contains a deafult route to an egress VPC. Set to false when the VPC is being used as an egress point for other VPCs attached to the same transit gateway.
-	EOT
+    Set to true only when the transit gateway routing table contains a default route to an egress VPC. Set to false when the VPC is being used as an egress point for other VPCs attached to the same transit gateway.
+  EOT
   default     = true
 }
 
