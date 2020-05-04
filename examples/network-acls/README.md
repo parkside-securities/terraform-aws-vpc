@@ -36,7 +36,6 @@ No input.
 | Name | Description |
 |------|-------------|
 | default\_network\_acl\_id | The ID of the default network ACL |
-| elasticache\_network\_acl\_id | ID of the elasticache network ACL |
 | module\_vpc | Module VPC |
 | nat\_public\_ips | List of public Elastic IPs created for AWS NAT Gateway |
 | private\_network\_acl\_id | ID of the private network ACL |
